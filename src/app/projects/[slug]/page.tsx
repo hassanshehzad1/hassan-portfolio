@@ -1,26 +1,20 @@
 import { notFound } from 'next/navigation';
 import { projects } from '@/data/projects';
-import { Code, ExternalLink, ArrowLeft, Calendar, Building2, Layers, Zap, Database, Cpu, Globe } from 'lucide-react';
+import { Code, ExternalLink, ArrowLeft, Calendar, Building2, Layers } from 'lucide-react';
 import Link from 'next/link';
 
-export const dynamic = 'force-dynamic';
-
 export async function generateStaticParams() {
-  return projects
-    .filter((project) => project.caseStudy)
-    .map((project) => ({
-      slug: project.slug,
-    }));
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
 }
 
-export default function ProjectCaseStudy({ params }: { params: { slug: string } }) {
+export default function ProjectDetail({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug);
 
-  if (!project || !project.caseStudy || !project.caseStudyData) {
+  if (!project) {
     notFound();
   }
-
-  const { caseStudyData } = project;
 
   return (
     <div className="min-h-screen bg-black">
@@ -47,7 +41,7 @@ export default function ProjectCaseStudy({ params }: { params: { slug: string } 
         <div className="max-w-7xl mx-auto">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-gray-800/50 rounded-full border border-gray-700 mb-6">
             <span className="w-2 h-2 bg-green-500 rounded-full" />
-            <span className="text-gray-300 text-sm">Featured Project</span>
+            <span className="text-gray-300 text-sm">{project.clientProject ? 'Client Project' : 'Personal Project'}</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -103,17 +97,17 @@ export default function ProjectCaseStudy({ params }: { params: { slug: string } 
             <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
                 <Calendar className="text-gray-400" size={20} />
-                <h3 className="text-white font-semibold">Timeline</h3>
+                <h3 className="text-white font-semibold">Year</h3>
               </div>
-              <p className="text-gray-400">April 2026 – August 2026</p>
+              <p className="text-gray-400">{project.year}</p>
             </div>
 
             <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
               <div className="flex items-center space-x-3 mb-4">
                 <Building2 className="text-gray-400" size={20} />
-                <h3 className="text-white font-semibold">Client</h3>
+                <h3 className="text-white font-semibold">Role</h3>
               </div>
-              <p className="text-gray-400">Self-Employed</p>
+              <p className="text-gray-400">{project.role}</p>
             </div>
 
             <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
@@ -131,123 +125,13 @@ export default function ProjectCaseStudy({ params }: { params: { slug: string } 
             </div>
           </div>
 
-          {/* Problem */}
+          {/* Description */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">The Problem</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">About This Project</h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              {caseStudyData.problem}
+              {project.description}
             </p>
           </div>
-
-          {/* Solution */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">The Solution</h2>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              {caseStudyData.solution}
-            </p>
-          </div>
-
-          {/* Architecture */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">Architecture</h2>
-            <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-              <p className="text-gray-400 leading-relaxed">
-                {caseStudyData.architecture}
-              </p>
-            </div>
-          </div>
-
-          {/* Key Features */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">Key Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {caseStudyData.keyFeatures.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-3 bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                  <Zap className="text-white flex-shrink-0 mt-1" size={18} />
-                  <span className="text-gray-400">{feature}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Engineering Challenges */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">Engineering Challenges</h2>
-            <div className="space-y-4">
-              {caseStudyData.engineeringChallenges.map((challenge, index) => (
-                <div key={index} className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-                  <p className="text-gray-400">{challenge}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Integrations */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">Integrations</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {caseStudyData.integrations.map((integration, index) => (
-                <div key={index} className="flex items-center space-x-3 bg-gray-900/50 border border-gray-800 rounded-lg p-4">
-                  <Database className="text-white" size={20} />
-                  <span className="text-gray-400">{integration}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Technology Stack */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6">Technology Stack</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <Cpu className="text-white" size={20} />
-                  <h3 className="text-white font-semibold">Backend</h3>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-gray-400">Django</p>
-                  <p className="text-gray-400">Django REST Framework</p>
-                  <p className="text-gray-400">PostgreSQL</p>
-                  <p className="text-gray-400">Celery</p>
-                  <p className="text-gray-400">Redis</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <Globe className="text-white" size={20} />
-                  <h3 className="text-white font-semibold">Frontend</h3>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-gray-400">Next.js 14</p>
-                  <p className="text-gray-400">TypeScript</p>
-                  <p className="text-gray-400">Tailwind CSS</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <Zap className="text-white" size={20} />
-                  <h3 className="text-white font-semibold">AI & Automation</h3>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-gray-400">OpenAI / LLM Integration</p>
-                  <p className="text-gray-400">Smart Automation</p>
-                  <p className="text-gray-400">QuickBooks API</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Results */}
-          {caseStudyData.results && caseStudyData.results !== '#TODO: Add impact metrics when available' && (
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-white mb-6">Results & Impact</h2>
-              <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-6">
-                <p className="text-gray-400 leading-relaxed">{caseStudyData.results}</p>
-              </div>
-            </div>
-          )}
         </div>
       </section>
 
