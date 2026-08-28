@@ -10,6 +10,7 @@ export const certifications: Certification[] = [
     skills: ['React', 'Django', 'Databases', 'APIs', 'Frontend', 'Backend'],
     featured: true,
     credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    imageUrl: '/images/certifications/meta-fullstack.png',
   },
   {
     id: 'mathematics-ml-ds',
@@ -20,6 +21,7 @@ export const certifications: Certification[] = [
     skills: ['Linear Algebra', 'Calculus', 'Probability', 'Statistics', 'Machine Learning'],
     featured: true,
     credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    imageUrl: '/images/certifications/mathematics-ml-ds.png',
   },
   {
     id: 'azure-ml-pipelines',
@@ -30,6 +32,7 @@ export const certifications: Certification[] = [
     skills: ['Azure ML', 'MLOps', 'ML Pipelines', 'Cloud'],
     featured: true,
     credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    imageUrl: '/images/certifications/azure-ml-pipelines.png',
   },
   {
     id: 'harvard-cs50',
@@ -40,6 +43,7 @@ export const certifications: Certification[] = [
     skills: ['Computer Science', 'Algorithms', 'C', 'Python'],
     featured: false,
     credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    imageUrl: '/images/certifications/harvard-cs50.png',
   },
   {
     id: 'anthropic-ai',
@@ -49,6 +53,7 @@ export const certifications: Certification[] = [
     category: ['AI / ML'],
     skills: ['AI', 'LLMs', 'AI Safety', 'Prompt Engineering'],
     credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    imageUrl: '/images/certifications/anthropic-ai.png',
   },
   {
     id: 'n8n-automation',
@@ -57,6 +62,7 @@ export const certifications: Certification[] = [
     date: 'August 2026',
     category: ['Automation'],
     skills: ['n8n', 'Workflow Automation', 'Error Handling', 'Conditional Logic', 'APIs'],
+    imageUrl: '/images/certifications/n8n-automation.png',
   },
   {
     id: 'calculus-ml',
@@ -65,6 +71,7 @@ export const certifications: Certification[] = [
     date: 'August 2026',
     category: ['AI / ML', 'Data Science'],
     skills: ['Calculus', 'Gradient Descent', 'Optimization', 'Machine Learning'],
+    imageUrl: '/images/certifications/calculus-ml.png',
   },
   {
     id: 'meta-apis',
@@ -73,6 +80,7 @@ export const certifications: Certification[] = [
     date: 'August 2026',
     category: ['Backend', 'Full Stack'],
     skills: ['REST APIs', 'API Design', 'Authentication', 'Postman'],
+    imageUrl: '/images/certifications/meta-apis.png',
   },
   {
     id: 'meta-django',
@@ -81,6 +89,7 @@ export const certifications: Certification[] = [
     date: 'August 2026',
     category: ['Backend', 'Full Stack'],
     skills: ['Django', 'Python', 'Web Development', 'MVC'],
+    imageUrl: '/images/certifications/meta-django.png',
   },
   {
     id: 'meta-databases',
@@ -89,6 +98,7 @@ export const certifications: Certification[] = [
     date: 'August 2026',
     category: ['Backend'],
     skills: ['SQL', 'Database Design', 'PostgreSQL', 'MySQL'],
+    imageUrl: '/images/certifications/meta-databases.png',
   },
   {
     id: 'meta-python',
@@ -97,6 +107,7 @@ export const certifications: Certification[] = [
     date: 'July 2026',
     category: ['Programming'],
     skills: ['Python', 'Programming', 'Data Structures', 'Algorithms'],
+    imageUrl: '/images/certifications/meta-python.png',
   },
   {
     id: 'meta-react',
@@ -105,6 +116,7 @@ export const certifications: Certification[] = [
     date: 'July 2026',
     category: ['Full Stack', 'Frontend'],
     skills: ['React', 'JavaScript', 'Components', 'State Management'],
+    imageUrl: '/images/certifications/meta-react.png',
   },
   {
     id: 'meta-git',
@@ -113,6 +125,7 @@ export const certifications: Certification[] = [
     date: 'July 2026',
     category: ['Programming', 'DevOps / Tools'],
     skills: ['Git', 'GitHub', 'Version Control', 'Collaboration'],
+    imageUrl: '/images/certifications/meta-git.png',
   },
   {
     id: 'meta-javascript',
@@ -121,6 +134,7 @@ export const certifications: Certification[] = [
     date: 'July 2026',
     category: ['Programming', 'Frontend'],
     skills: ['JavaScript', 'DOM', 'ES6+', 'Web Development'],
+    imageUrl: '/images/certifications/meta-javascript.png',
   },
   {
     id: 'meta-frontend',
@@ -129,6 +143,7 @@ export const certifications: Certification[] = [
     date: 'July 2026',
     category: ['Frontend', 'Full Stack'],
     skills: ['HTML', 'CSS', 'Frontend', 'Web Development'],
+    imageUrl: '/images/certifications/meta-frontend.png',
   },
   {
     id: 'nodejs-express',
@@ -137,6 +152,7 @@ export const certifications: Certification[] = [
     date: 'July 2026',
     category: ['Backend', 'Full Stack'],
     skills: ['Node.js', 'Express.js', 'REST APIs', 'Middleware'],
+    imageUrl: '/images/certifications/nodejs-express.png',
   },
   {
     id: 'meta-backend',
@@ -145,6 +161,7 @@ export const certifications: Certification[] = [
     date: 'June 2026',
     category: ['Backend', 'Full Stack'],
     skills: ['Backend', 'Server-side', 'APIs', 'Databases'],
+    imageUrl: '/images/certifications/meta-backend.png',
   },
   {
     id: 'azure-cv',
@@ -153,6 +170,7 @@ export const certifications: Certification[] = [
     date: 'April 2026',
     category: ['AI / ML', 'Cloud'],
     skills: ['Azure', 'Computer Vision', 'AI Services', 'Cloud'],
+    imageUrl: '/images/certifications/azure-cv.png',
   },
   {
     id: 'deeplearning-ml',
@@ -161,6 +179,7 @@ export const certifications: Certification[] = [
     date: 'April 2026',
     category: ['AI / ML', 'Data Science'],
     skills: ['Machine Learning', 'Regression', 'Classification', 'Python'],
+    imageUrl: '/images/certifications/deeplearning-ml.png',
   },
   {
     id: 'kaggle-intermediate',
@@ -169,6 +188,7 @@ export const certifications: Certification[] = [
     date: 'March 2026',
     category: ['AI / ML', 'Data Science'],
     skills: ['Machine Learning', 'Feature Engineering', 'Model Validation'],
+    imageUrl: '/images/certifications/kaggle-intermediate.png',
   },
   {
     id: 'kaggle-intro',
@@ -177,6 +197,7 @@ export const certifications: Certification[] = [
     date: 'March 2026',
     category: ['AI / ML', 'Data Science'],
     skills: ['Machine Learning', 'Data Analysis', 'Python'],
+    imageUrl: '/images/certifications/kaggle-intro.png',
   },
   {
     id: 'fcc-python-ds',
@@ -185,6 +206,7 @@ export const certifications: Certification[] = [
     date: 'October 2025',
     category: ['Data Science', 'Programming'],
     skills: ['Python', 'Data Analysis', 'Pandas', 'NumPy'],
+    imageUrl: '/images/certifications/fcc-python-ds.png',
   },
   {
     id: 'kaggle-pandas',
@@ -193,6 +215,7 @@ export const certifications: Certification[] = [
     date: 'September 2025',
     category: ['Data Science', 'Programming'],
     skills: ['Pandas', 'Data Analysis', 'Python'],
+    imageUrl: '/images/certifications/kaggle-pandas.png',
   },
   {
     id: 'fcc-backend',
@@ -201,6 +224,7 @@ export const certifications: Certification[] = [
     date: 'April 2025',
     category: ['Backend', 'Full Stack'],
     skills: ['Node.js', 'Express', 'MongoDB', 'REST APIs'],
+    imageUrl: '/images/certifications/fcc-backend.png',
   },
   {
     id: 'fcc-frontend-lib',
@@ -209,6 +233,7 @@ export const certifications: Certification[] = [
     date: 'April 2025',
     category: ['Frontend', 'Full Stack'],
     skills: ['React', 'Redux', 'Bootstrap', 'jQuery'],
+    imageUrl: '/images/certifications/fcc-frontend-lib.png',
   },
   {
     id: 'kaggle-python',
@@ -217,6 +242,7 @@ export const certifications: Certification[] = [
     date: 'March 2025',
     category: ['Data Science', 'Programming'],
     skills: ['Python', 'Data Science', 'Pandas'],
+    imageUrl: '/images/certifications/kaggle-python.png',
   },
   {
     id: 'fcc-js-algo',
@@ -225,6 +251,7 @@ export const certifications: Certification[] = [
     date: 'February 2025',
     category: ['Programming', 'Frontend'],
     skills: ['JavaScript', 'Algorithms', 'Data Structures'],
+    imageUrl: '/images/certifications/fcc-js-algo.png',
   },
   {
     id: 'fcc-responsive',
@@ -233,6 +260,7 @@ export const certifications: Certification[] = [
     date: 'August 2023',
     category: ['Frontend'],
     skills: ['HTML', 'CSS', 'Responsive Design', 'Flexbox'],
+    imageUrl: '/images/certifications/fcc-responsive.png',
   },
 ];
 

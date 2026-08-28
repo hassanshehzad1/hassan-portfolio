@@ -15,7 +15,8 @@ export const projects: Project[] = [
     technologies: ['Django', 'Django REST Framework', 'PostgreSQL', 'Celery', 'Redis', 'Next.js', 'TypeScript', 'TailwindCSS', 'QuickBooks API', 'JWT', 'WeasyPrint', 'LLM / AI Integration'],
     image: '/images/projects/real-estate-erp.png',
     github: 'https://github.com/hassanshehzad1/ERP_ESM',
-    liveUrl: '',
+    liveUrl: 'https://erp-real-estate.binovalogics.com/login',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -33,6 +34,7 @@ export const projects: Project[] = [
     image: '/images/projects/scooty-showroom-erp.png',
     github: 'https://github.com/hassanshehzad1/ERP_ESM',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -50,6 +52,7 @@ export const projects: Project[] = [
     image: '/images/projects/drip-fashion.png',
     github: 'https://github.com/hassanshehzad1/Drip-Fashion-Outfit-Suggestion-',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -67,6 +70,7 @@ export const projects: Project[] = [
     image: '/images/projects/rideo.png',
     github: 'https://github.com/hassanshehzad1/Rideo',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -81,6 +85,7 @@ export const projects: Project[] = [
     image: '/images/projects/call-crafter.png',
     github: 'https://github.com/hassanshehzad1/Call.Crafter',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -95,6 +100,7 @@ export const projects: Project[] = [
     image: '/images/projects/heart-disease-ml.png',
     github: 'https://github.com/hassanshehzad1/Heart_Disease_ML_Data_Clean',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -109,6 +115,7 @@ export const projects: Project[] = [
     image: '/images/projects/medical-insurance-ml.png',
     github: 'https://github.com/hassanshehzad1/ML_Project_1',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -123,6 +130,7 @@ export const projects: Project[] = [
     image: '/images/projects/bank-backend.png',
     github: 'https://github.com/hassanshehzad1/Bank_BACKEND',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -137,6 +145,7 @@ export const projects: Project[] = [
     image: '/images/projects/vehicle-sales-insights.png',
     github: 'https://github.com/hassanshehzad1/Vehicle_Sales_Services_Insght_Platform',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -151,6 +160,7 @@ export const projects: Project[] = [
     image: '/images/projects/aivault.png',
     github: 'https://github.com/hassanshehzad1/AIVault',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -165,6 +175,7 @@ export const projects: Project[] = [
     image: '/images/projects/ecommerce.png',
     github: 'https://github.com/hassanshehzad1/Ecomerce',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
   {
@@ -179,6 +190,7 @@ export const projects: Project[] = [
     image: '/images/projects/job-portal.png',
     github: 'https://github.com/hassanshehzad1/Job_Portal',
     liveUrl: '',
+    certificateUrl: '#',
     caseStudy: false,
   },
 ];

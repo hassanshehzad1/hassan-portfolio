@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Code, ExternalLink, FileText, Lock, X } from 'lucide-react';
+import { Code, ExternalLink, FileText, Lock, X, Award } from 'lucide-react';
 import { projects, projectCategories } from '@/data/projects';
 
 export default function Projects() {
@@ -118,20 +118,29 @@ export default function Projects() {
               role="button"
               aria-label={`View details for ${project.title}`}
             >
-              <div className="aspect-video bg-gray-800 relative">
+              <div className="aspect-video bg-gray-800 relative overflow-hidden">
                 {project.featured && (
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-white text-black rounded-full text-xs font-medium">
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-white text-black rounded-full text-xs font-medium z-10">
                     Featured
                   </div>
                 )}
                 {isClientProject(project) && (
-                  <div className="absolute top-4 right-4 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium">
+                  <div className="absolute top-4 right-4 px-3 py-1 bg-blue-600 text-white rounded-full text-xs font-medium z-10">
                     Client Project
                   </div>
                 )}
-                <div className="absolute inset-0 flex items-center justify-center text-gray-600">
-                  <Code size={48} />
-                </div>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-gray-600">
+                    <Code size={48} />
+                  </div>
+                )}
               </div>
 
               <div className="p-6">
@@ -184,6 +193,19 @@ export default function Projects() {
                     >
                       <ExternalLink size={16} />
                       <span>Live Demo</span>
+                    </a>
+                  )}
+                  {project.certificateUrl && project.certificateUrl !== '' && (
+                    <a
+                      href={project.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-white rounded"
+                      aria-label={`View certificate for ${project.title}`}
+                    >
+                      <Award size={16} />
+                      <span>Certificate</span>
                     </a>
                   )}
                   {project.caseStudy && (
@@ -258,6 +280,16 @@ export default function Projects() {
                   <X size={24} />
                 </button>
               </div>
+
+              {selectedProject.image && (
+                <div className="mb-6 rounded-lg overflow-hidden">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    className="w-full h-auto"
+                  />
+                </div>
+              )}
 
               <p className="text-gray-300 mb-6">{selectedProject.description}</p>
 
@@ -346,6 +378,17 @@ export default function Projects() {
                   >
                     <ExternalLink size={18} />
                     <span>Live Demo</span>
+                  </a>
+                )}
+                {selectedProject.certificateUrl && selectedProject.certificateUrl !== '' && (
+                  <a
+                    href={selectedProject.certificateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white rounded-lg font-medium hover:bg-gray-700 transition-colors border border-gray-700 focus:outline-none focus:ring-2 focus:ring-white"
+                  >
+                    <Award size={18} />
+                    <span>View Certificate</span>
                   </a>
                 )}
                 {selectedProject.caseStudy && (

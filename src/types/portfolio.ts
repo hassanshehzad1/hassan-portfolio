@@ -25,6 +25,7 @@ export interface Project {
   image: string;
   github: string;
   liveUrl?: string;
+  certificateUrl?: string;
   caseStudy: boolean;
   caseStudyData?: CaseStudyData;
   clientProject?: boolean;
@@ -63,6 +64,7 @@ export interface Certification {
   skills: string[];
   credentialId?: string;
   credentialUrl?: string;
+  imageUrl?: string;
   featured?: boolean;
 }
 
