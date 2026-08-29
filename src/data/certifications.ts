@@ -2,6 +2,17 @@ import { Certification } from '@/types/portfolio';
 
 export const certifications: Certification[] = [
   {
+    id: 'what-is-data-science',
+    title: 'What is Data Science',
+    issuer: 'IBM / Coursera',
+    date: 'August 2026',
+    category: ['Data Science'],
+    skills: ['Data Science', 'Data Analysis', 'Data Mining', 'Cloud Computing', 'Big Data'],
+    credentialId: '8UKKYVU3ZVBF',
+    credentialUrl: 'https://coursera.org/share/c8da337f7c0246ea3631802637f7b253',
+    imageUrl: '/images/Data Science.png',
+  },
+  {
     id: 'meta-fullstack',
     title: 'Meta Full Stack Developer Professional Certificate',
     issuer: 'Meta / Coursera',
