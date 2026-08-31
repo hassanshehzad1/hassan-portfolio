@@ -20,7 +20,7 @@ export const certifications: Certification[] = [
     category: ['Full Stack'],
     skills: ['React', 'Django', 'Databases', 'APIs', 'Frontend', 'Backend'],
     featured: true,
-    credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
     imageUrl: '/images/certifications/meta-fullstack.png',
   },
   {
@@ -31,7 +31,7 @@ export const certifications: Certification[] = [
     category: ['AI / ML', 'Data Science'],
     skills: ['Linear Algebra', 'Calculus', 'Probability', 'Statistics', 'Machine Learning'],
     featured: true,
-    credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
     imageUrl: '/images/certifications/mathematics-ml-ds.png',
   },
   {
@@ -42,7 +42,7 @@ export const certifications: Certification[] = [
     category: ['AI / ML', 'Cloud', 'MLOps'],
     skills: ['Azure ML', 'MLOps', 'ML Pipelines', 'Cloud'],
     featured: true,
-    credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
     imageUrl: '/images/certifications/azure-ml-pipelines.png',
   },
   {
@@ -53,7 +53,7 @@ export const certifications: Certification[] = [
     category: ['Programming'],
     skills: ['Computer Science', 'Algorithms', 'C', 'Python'],
     featured: false,
-    credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
     imageUrl: '/images/certifications/harvard-cs50.png',
   },
   {
@@ -63,7 +63,7 @@ export const certifications: Certification[] = [
     date: 'April 2026',
     category: ['AI / ML'],
     skills: ['AI', 'LLMs', 'AI Safety', 'Prompt Engineering'],
-    credentialUrl: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
     imageUrl: '/images/certifications/anthropic-ai.png',
   },
   {

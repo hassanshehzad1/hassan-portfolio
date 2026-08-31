@@ -38,7 +38,7 @@ export default function Hero() {
             {profile.name}
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-4">
-            Full Stack Software Engineer | Backend-Focused | AI/ML | AI Agents | Automation
+            Full Stack Software Engineer | Backend-Focused | AI Agents | Exploring AI/ML Automation (n8n)
           </p>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-12">
             Building scalable software, intelligent AI systems, and automation that solve real-world problems.

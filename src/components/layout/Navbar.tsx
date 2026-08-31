@@ -96,7 +96,7 @@ export default function Navbar() {
               <Code size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/hassan-shehzad-10312a285/"
+              href="https://linkedin.com/in/hassanshehzad1"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-300 hover:text-white transition-colors rounded-md hover:bg-gray-800/50"
@@ -156,7 +156,7 @@ export default function Navbar() {
                 <Code size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/hassan-shehzad-10312a285/"
+                href="https://linkedin.com/in/hassanshehzad1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-300 hover:text-white transition-colors"

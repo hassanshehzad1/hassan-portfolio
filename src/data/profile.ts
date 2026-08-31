@@ -8,7 +8,7 @@ export const profile: Profile = {
   email: 'hassanbahsarat@gmail.com',
   phone: '0303-9287727',
   github: 'https://github.com/hassanshehzad1',
-  linkedin: 'https://www.linkedin.com/in/hassan-shehzad-10312a285/',
+  linkedin: 'https://linkedin.com/in/hassanshehzad1',
   about: `I am a Full Stack Software Engineer with a strong backend focus, working primarily with Node.js, Express, Django, MongoDB and PostgreSQL, while building modern frontends using React and Next.js.
 
 I have worked on freelance and client-based software projects involving full-stack applications, backend systems, APIs, SaaS platforms, real-time systems and integrations.
