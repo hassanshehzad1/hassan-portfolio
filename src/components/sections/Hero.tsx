@@ -59,7 +59,7 @@ export default function Hero() {
               Contact Me
             </button>
             <a
-              href="/resume/Hassan-Shehzad-Resume.pdf"
+              href="/resume/Hassan_Shehzad_Resume.pdf"
               download
               className="px-8 py-3 bg-gray-800/50 text-white rounded-lg font-medium hover:bg-gray-700/50 transition-colors border border-gray-700 flex items-center space-x-2"
             >

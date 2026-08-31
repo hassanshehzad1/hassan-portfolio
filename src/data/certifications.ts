@@ -20,8 +20,8 @@ export const certifications: Certification[] = [
     category: ['Full Stack'],
     skills: ['React', 'Django', 'Databases', 'APIs', 'Frontend', 'Backend'],
     featured: true,
-    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
-    imageUrl: '/images/certifications/meta-fullstack.png',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/certificate/1Q6Y8A05J3E4',
+    imageUrl: '/images/certifications/meta-fullstack-professional.png',
   },
   {
     id: 'mathematics-ml-ds',
@@ -31,8 +31,8 @@ export const certifications: Certification[] = [
     category: ['AI / ML', 'Data Science'],
     skills: ['Linear Algebra', 'Calculus', 'Probability', 'Statistics', 'Machine Learning'],
     featured: true,
-    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
-    imageUrl: '/images/certifications/mathematics-ml-ds.png',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/certificate/1Q6Y8A05J3E4',
+    imageUrl: '/images/certifications/mathematics-professional.png',
   },
   {
     id: 'azure-ml-pipelines',
@@ -42,8 +42,8 @@ export const certifications: Certification[] = [
     category: ['AI / ML', 'Cloud', 'MLOps'],
     skills: ['Azure ML', 'MLOps', 'ML Pipelines', 'Cloud'],
     featured: true,
-    credentialUrl: 'https://linkedin.com/in/hassanshehzad1',
-    imageUrl: '/images/certifications/azure-ml-pipelines.png',
+    credentialUrl: 'https://www.coursera.org/account/accomplishments/specialization/1Q6Y8A05J3E4',
+    imageUrl: '/images/certifications/ml-with-pipelines.png',
   },
   {
     id: 'harvard-cs50',
