@@ -53,6 +53,7 @@ export interface Experience {
   endDate: string;
   description: string;
   responsibilities: string[];
+  certificateUrl?: string;
 }
 
 export interface Certification {

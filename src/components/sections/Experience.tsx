@@ -34,7 +34,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <p className="text-gray-400 mb-4">{exp.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {exp.responsibilities.map((resp, idx) => (
                     <span
                       key={idx}
@@ -44,6 +44,19 @@ export default function Experience() {
                     </span>
                   ))}
                 </div>
+                {exp.certificateUrl && (
+                  <a
+                    href={exp.certificateUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                  >
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    View Certificate
+                  </a>
+                )}
               </div>
             </div>
           ))}

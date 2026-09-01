@@ -20,6 +20,22 @@ export const experience: Experience[] = [
     ],
   },
   {
+    id: 'binovlogics-internship',
+    company: 'BinovLogics',
+    role: 'AI/ML Engineer Intern',
+    type: 'Internship',
+    location: 'Remote',
+    startDate: 'July 17, 2026',
+    endDate: 'August 20, 2026',
+    description: 'Contributed to AI/ML engineering initiatives during a hands-on internship at BinovLogics.',
+    responsibilities: [
+      'Contributed to AI/ML engineering initiatives during a hands-on internship at BinovLogics',
+      'Gained practical exposure to machine learning workflows and applied AI development practices',
+      'Collaborated with the engineering team on AI/ML-focused tasks and projects',
+    ],
+    certificateUrl: '/images/certificates/binovlogics-internship.jpeg',
+  },
+  {
     id: 'self-employed-project',
     company: 'Self-Employed',
     role: 'Project-Based Developer',

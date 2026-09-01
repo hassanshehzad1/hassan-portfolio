@@ -2,6 +2,26 @@ import { Certification } from '@/types/portfolio';
 
 export const certifications: Certification[] = [
   {
+    id: 'coding-interview',
+    title: 'Coding Interview',
+    issuer: 'Coursera',
+    date: 'September 2026',
+    category: ['Backend', 'Problem Solving', 'Coding'],
+    skills: ['Coding', 'Problem Solving', 'Algorithms', 'Data Structures'],
+    credentialUrl: '/Certifcate/Coursera Interview.pdf',
+    imageUrl: '/images/certificates/coding-interview.png',
+  },
+  {
+    id: 'intro-mobile-development',
+    title: 'Intro to Mobile Development',
+    issuer: 'Coursera',
+    date: 'August 2026',
+    category: ['Mobile Development', 'Full Stack'],
+    skills: ['Mobile Development', 'Android', 'iOS', 'React Native', 'Flutter'],
+    credentialUrl: '/Certifcate/Intro to mobile development.pdf',
+    imageUrl: '/images/certificates/intro-mobile-development.png',
+  },
+  {
     id: 'what-is-data-science',
     title: 'What is Data Science',
     issuer: 'IBM / Coursera',
@@ -285,4 +305,7 @@ export const certificationCategories = [
   'Automation',
   'Cloud',
   'Programming',
+  'Problem Solving',
+  'Coding',
+  'Mobile Development',
 ];
